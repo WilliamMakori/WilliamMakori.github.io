@@ -1,252 +1,184 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	CCA - Creative Commons Attribution 3.0 Unported license 
-	This particular license allows you to use, modify and distribute the material as long as you give proper
-	credits to the creator. 
-	The creator of these templates and files allows people and businesses to use them for free. 
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Makori Chacha | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="description"
+      content="Portfolio of Makori Chacha — fourth-year Computer Science student at Simon Fraser University. Explore projects in web, mobile, and AI development."
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
 
-<head>
-	<title>My Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>Makori Chacha</h1>
+        <p>A showcase of my professional work and experience</p>
+        <ul class="actions">
+          <li>
+            <a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+          </li>
+        </ul>
+      </div>
 
-	<!-- What does the noscript tag do? -->
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Welcome</a>
+      </header>
 
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-</head>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">About Me</a></li>
+          <li><a href="generic.html">Experience</a></li>
+          <li><a href="elements.html">Interests & Hobbies</a></li>
+        </ul>
 
-<body class="is-preload">
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/makorichacha" class="icon brands fa-linkedin">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/WilliamMakori" class="icon brands fa-github">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
+      <!-- Main -->
+      <div id="main">
 
-		<!-- Intro -->
-		<div id="intro">
+        <!-- About Section -->
+        <article class="post featured">
+          <header class="major">
+            <h2><a href="#">About Me</a></h2>
+            <p>
+              I’m a fourth-year Computer Science student at Simon Fraser University with two semesters left before graduation. 
+              I’m passionate about building scalable, efficient, and user-centered software. My experience spans web, mobile, 
+              and systems development — with hands-on projects in C++, Swift, and JavaScript. I enjoy solving complex problems 
+              through clean design, innovation, and continuous learning.
+            </p>
+          </header>
+        </article>
 
-			<h1>Makori Chacha</h1>
-			<p> A showcase of my professional work and experience</p>
+        <!-- Projects -->
+        <section class="posts">
+          <article>
+            <header><h2><a href="#">RafikiAI (iOS App)</a></h2></header>
+            <a href="#" class="image fit"><img src="images/RafikiAIiOS.jpg" alt="RafikiAI app screenshot" /></a>
+            <p>
+              RafikiAI is an iOS app built with <strong>Swift</strong> and <strong>SwiftUI</strong> that integrates the 
+              <strong>OpenAI Chat Completion API</strong> to deliver natural, conversational AI experiences. It assists 
+              users with everyday tasks such as creating fitness plans, generating meal ideas, and writing professional 
+              documents. This project strengthened my skills in <strong>SwiftUI design</strong>, 
+              <strong>API integration</strong>, and <strong>natural language processing</strong>.
+            </p>
+          </article>
 
-			<ul class="actions">
+          <article>
+            <header><h2><a href="#">IMDb Clone (Web App)</a></h2></header>
+            <a href="#" class="image fit"><img src="images/IMDBClone.jpg" alt="IMDb Clone screenshot" /></a>
+            <p>
+              A fully responsive movie database application built using <strong>Next.js 14</strong>, 
+              <strong>Tailwind CSS</strong>, and the <strong>TMDb API</strong>. The app supports dark mode, 
+              dynamic routing, and server-side rendering for optimal performance. I learned modern 
+              <strong>React workflows</strong>, <strong>API-driven development</strong>, and deployment through 
+              <strong>Vercel</strong>.
+            </p>
+          </article>
 
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+          <article>
+            <header><h2><a href="#">ColorStackSFU (Community Platform)</a></h2></header>
+            <a href="#" class="image fit"><img src="images/ColorStackSFU.png" alt="ColorStackSFU screenshot" /></a>
+            <p>
+              ColorStackSFU is a community web platform built for <strong>Black and Latinx Computing Science students</strong> at SFU. 
+              Developed with <strong>HTML, CSS, JavaScript, and Firebase</strong>, it features user authentication, event management, 
+              and real-time updates. This project improved my skills in <strong>responsive web design</strong>, 
+              <strong>Firebase integration</strong>, and <strong>UI architecture</strong>.
+            </p>
+          </article>
+        </section>
 
-			</ul>
+        <!-- Footer -->
+        <footer>
+          <div class="pagination"></div>
+        </footer>
+      </div>
 
-		</div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section>
 
-		<!-- Header -->
-		<header id="header">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>Vancouver, BC, Canada</p>
+          </section>
+          <section>
+            <h3>Phone</h3>
+            <p><a href="tel:+12369784538">+1 (236) 978-4538</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="mailto:wchacha@sfu.ca">wchacha@sfu.ca</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="https://www.linkedin.com/in/makorichacha" class="icon brands alt fa-linkedin">
+                  <span class="label">LinkedIn</span></a>
+              </li>
+              <li>
+                <a href="https://github.com/WilliamMakori" class="icon brands alt fa-github">
+                  <span class="label">GitHub</span></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
 
-			<a href="index.html" class="logo">Welcome</a>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; 2025 Makori Chacha</li></ul>
+      </div>
+    </div>
 
-		</header>
-
-		<!-- Nav -->
-		<nav id="nav">
-
-			<ul class="links">
-
-				<li class="active"><a href="index.html">About me</a></li>
-				<!--I should remove these next two links, they're useless-->
-				<li><a href="generic.html">Experience</a></li>
-				<li><a href="elements.html">Interests & Hobbies</a></li>
-
-			</ul>
-
-			<ul class="icons">
-
-				<li><a href="https://www.linked.in/makorichacha" class="icon brands fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/WilliamMakori" class="icon brands fa-github"><span
-							class="label">GitHub</span></a></li>
-
-			</ul>
-
-		</nav>
-
-		<!-- Main -->
-
-		<div id="main">
-
-			<!-- Featured Post -->
-
-			<article class="post featured">
-
-				<header class="major">
-					<!-- I should have a section that shows my projects related to finance (fintech), 
-						mobile and web application development projects 
-						and my artificial intelligence projects
-					-->
-
-					<h2><a href="#">About Me </a></h2>
-					<p>I am a third year Computing Science and Mathematics student at Simon Fraser University.
-						My interests include tech, finance and fitness.
-						However, this portfolio only showcases my work in one out of the three, enjoy.
-						<br />
-					</p>
-				</header>
-				<!-- 
-				<a href="#Image can't be displayed" class="image main"><img src="images/Personal.jpg" alt="" /></a>
-				-->
-
-			</article>
-
-			<!-- Posts -->
-			<section class="posts">
-				<article>
-					<header>
-
-						<h2><a href="#">Rafiki AI iOS</a></h2>
-					</header>
-
-					<a href="#" class="image fit"><img src="images/RafikiAIiOS.jpg" alt="" /></a>
-
-					<p>
-						RafikiAI for iOS: Harnessing SwiftUI and Swift, I engineered an intelligent front end that
-						provides a user with natural language responses powered by OpenAI's GPT model. Core Data
-						ensures seamless storage of user-generated data.
-					</p>
-
-
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="#">Face Recognition</a></h2>
-					</header>
-
-					<a href="#" class="image fit"><img src="images/FacialRecognition.jpg" alt="" /></a>
-					<p>
-						In this project, I showcased my engineering skills by crafting a powerful
-						application in C++ with OpenCV. Leveraging cutting-edge computer vision algorithms, it delivers
-						real-time face detection and recognition with remarkable accuracy. Meticulously designed, it
-						reflects my commitment to excellence in complex software development challenges.
-					</p>
-
-
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="#">RafikiAI Android</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/RafikiAndroid.jpg" alt="" /></a>
-					<p>
-						RafikiAI Android: My Java-powered project taps into OpenAI's GPT model, empowering mobile users
-						with intelligent, natural language responses.
-					</p>
-				</article>
-				<article>
-					<header>
-
-						<!--Include link to the web app -->
-						<h2>
-
-							<a href="#">RafikiAI ReactJS</a>
-
-						</h2>
-
-					</header>
-					<a href="#" class="image fit"><img src="images/RafikiAIReactJS.jpg" alt="" /></a>
-					<p>RafikiAI in React JS: With React's dynamic front-end, I crafted an intelligent interface,
-						integrating OpenAI's GPT model for natural language responses. A powerful fusion of technology
-						and creativity, empowering users with smart interactions.</p>
-
-				</article>
-
-			</section>
-
-			<!-- Footer -->
-			<footer>
-				<div class="pagination">
-					<!--<a href="#" class="previous">Prev</a>-->
-
-				</div>
-			</footer>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<!--Change the action to a URL endpoint that submits the information to my email account.-->
-
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-			</section>
-			<section class="split contact">
-				<section class="alt">
-					<h3>Address</h3>
-					<p>Vancouver, BC</p>
-				</section>
-				<section>
-					<h3>Phone</h3>
-					<p>(604)-561-2247</p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="makorichacha99@gmail.com">makorichacha99@gmail.com</a></p>
-				</section>
-				<section>
-					<h3>Social</h3>
-					<ul class="icons alt">
-
-						<li><a href="https://www.linkedin.in/makorichacha" class="icon brands alt fa-linkedin"><span
-									class="label">LinkedIn</span></a>
-						</li>
-						<li><a href="https://github.com/WilliamMakori" class="icon brands alt fa-github"><span
-									class="label">GitHub</span></a></li>
-
-					</ul>
-				</section>
-			</section>
-		</footer>
-
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul>
-				<!--The hyperlink isn't needed here. Just my name and year of publication.-->
-				<li>&copy; Makori Chacha 2023</li>
-
-			</ul>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
