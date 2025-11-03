@@ -116,15 +116,15 @@
       <!-- Footer -->
       <footer id="footer">
         <section>
-          <form method="POST" action="https://formspree.io/f/mwpwoady">
+          <form id="contactForm" method="POST" action="https://formspree.io/f/mwpwoady">
             <div class="fields">
               <div class="field">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required/>
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required/>
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="field">
                 <label for="message">Message</label>
@@ -135,6 +135,26 @@
               <li><input type="submit" value="Send Message" /></li>
             </ul>
           </form>
+          
+          <script>
+            const form = document.getElementById("contactForm");
+          
+            form.addEventListener("submit", async function (e) {
+              e.preventDefault(); // stop normal submit
+          
+              const formData = new FormData(form);
+          
+              // send data to Formspree
+              await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { Accept: "application/json" },
+              });
+          
+              form.reset(); // clear all fields
+              alert("Message sent successfully!");
+            });
+          </script>
         </section>
 
         <section class="split contact">
