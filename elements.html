@@ -6,7 +6,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
 </head>
 
 <body class="is-preload">
@@ -27,8 +29,10 @@
         <li class="active"><a href="elements.html">Interests & Hobbies</a></li>
       </ul>
       <ul class="icons">
-        <li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/WilliamMakori" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span
+              class="label">Instagram</span></a></li>
+        <li><a href="https://github.com/WilliamMakori" class="icon brands fa-github"><span
+              class="label">GitHub</span></a></li>
       </ul>
     </nav>
 
@@ -37,10 +41,10 @@
       <section>
         <h1>My Interests & Hobbies</h1>
         <p>
-          Outside of computing, I enjoy <strong>fitness and travelling. 
-          I’m passionate about continuous learning — whether that’s exploring new 
-          technologies, reading about financial markets, or refining my approach to problem-solving.  
-          These interests help me stay creative and grounded while pushing my limits both in and out of tech.
+          Outside of computing, I enjoy <strong>fitness and travelling.
+            I’m passionate about continuous learning — whether that’s exploring new
+            technologies, reading about financial markets, or refining my approach to problem-solving.
+            These interests help me stay creative and grounded while pushing my limits both in and out of tech.
         </p>
       </section>
     </div>
@@ -67,22 +71,22 @@
             <li><input type="submit" value="Send Message" /></li>
           </ul>
         </form>
-        
+
         <script>
           const form = document.getElementById("contactForm");
-        
+
           form.addEventListener("submit", async function (e) {
             e.preventDefault(); // stop normal submit
-        
+
             const formData = new FormData(form);
-        
+
             // send data to Formspree
             await fetch(form.action, {
               method: form.method,
               body: formData,
               headers: { Accept: "application/json" },
             });
-        
+
             form.reset(); // clear all fields
             alert("Message sent successfully!");
           });
@@ -92,21 +96,23 @@
       <section class="split contact">
         <section class="alt">
           <h3>Address</h3>
-          <p>Vancouver, BC, Canada</p>
+          <p>Dar es Salaam, Tanzania</p>
         </section>
         <section>
           <h3>Phone</h3>
-          <p><a href="tel:+12369784538">(236)-978-4538</a></p>
+          <p><a href="tel:++255696589739">0696589739</a></p>
         </section>
         <section>
           <h3>Email</h3>
-          <p><a href="mailto:wchacha@sfu.ca">wchacha@sfu.ca</a></p>
+          <p><a href="mailto:williammakori00@gmail.com">williammakori00@gmail.com</a></p>
         </section>
         <section>
           <h3>Social</h3>
           <ul class="icons alt">
-            <li><a href="https://github.com/WilliamMakori" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a href="https://www.linkedin.com/in/makorichacha" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/WilliamMakori" class="icon brands alt fa-github"><span
+                  class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/makorichacha" class="icon brands alt fa-linkedin"><span
+                  class="label">LinkedIn</span></a></li>
           </ul>
         </section>
       </section>
@@ -114,7 +120,9 @@
 
     <!-- Copyright -->
     <div id="copyright">
-      <ul><li>&copy; 2025 Makori Chacha</li></ul>
+      <ul>
+        <li>&copy; Makori Chacha 2026</li>
+      </ul>
     </div>
 
   </div>
@@ -129,4 +137,5 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
