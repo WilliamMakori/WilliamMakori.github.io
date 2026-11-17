@@ -62,13 +62,13 @@
         <header class="major">
           <h2><a href="#">About Me</a></h2>
           <p>
-            I’m a fourth-year Computer Science student at Simon Fraser University with two semesters left before
-            graduation.
-            I’m passionate about building scalable, efficient, and user-centered software. My experience spans web,
-            mobile,
-            and systems development — with hands-on projects in C++, Swift, and JavaScript. I enjoy solving complex
-            problems
-            through clean design, innovation, and continuous learning.
+            I’m a software developer and Computer Science student completing my BSc at Southern New Hampshire
+            University, building on my studies at Simon Fraser University. I build full-stack web apps, mobile apps,
+            and AI-powered tools, from a financing and payment platform with automated bank reconciliation to a
+            Gemini-based recommendation engine and a SwiftUI iOS assistant. Before that, I worked as a software
+            developer co-op at Teck Resources, where I developed industrial automation and data integration
+            applications in C# and .NET. I enjoy solving complex problems with clean design, reliable systems, and
+            continuous learning.
           </p>
         </header>
       </article>
@@ -79,7 +79,8 @@
           <header>
             <h2><a href="#">RafikiAI (iOS App)</a></h2>
           </header>
-          <a href="#" class="image fit"><img src="images/RafikiAIiOS.png" alt="RafikiAI app screenshot" /></a>
+          <a href="https://github.com/WilliamMakori/RafikiAI" class="image fit"><img src="images/RafikiAIiOS.png"
+              alt="RafikiAI app screenshot" /></a>
           <p>
             RafikiAI is an iOS app built with <strong>Swift</strong> and <strong>SwiftUI</strong> that integrates the
             <strong>OpenAI Chat Completion API</strong> to deliver natural, conversational AI experiences. It assists
@@ -91,30 +92,44 @@
 
         <article>
           <header>
-            <h2><a href="#">IMDb Clone (Web App)</a></h2>
+            <h2><a href="#">CRDB Customer Advisor Web Application</a></h2>
           </header>
-          <a href="#" class="image fit"><img src="images/IMDBClone.jpg" alt="IMDb Clone screenshot" /></a>
+          <a href="https://github.com/WilliamMakori/CRDBCustomerAdvisor" class="image fit"><img src="images/CRDB.png"
+              alt="CRDB Customer Advisor Dashboard" /></a>
           <p>
-            A fully responsive movie database application built using <strong>Next.js 14</strong>,
-            <strong>Tailwind CSS</strong>, and the <strong>TMDb API</strong>. The app supports dark mode,
-            dynamic routing, and server-side rendering for optimal performance. I learned modern
-            <strong>React workflows</strong>, <strong>API-driven development</strong>, and deployment through
-            <strong>Vercel</strong>.
+            An AI-powered financial advisor for <strong>CRDB Bank Tanzania</strong> customers. A customer fills in a
+            profile (age, income, risk appetite, goals, available capital) and gets five product recommendations from
+            CRDB's real catalogue, each with a reason, eligibility note and next step. The <strong>Java 17</strong>
+            backend checks <strong>DynamoDB</strong> for a recent cached result, and if there isn't one, builds a prompt
+            from the profile and product catalogue and sends it to the <strong>Google Gemini API</strong>, which returns
+            structured JSON. Updating a profile clears the cache so recommendations stay current. The dashboard is
+            built with <strong>React</strong>, <strong>TypeScript</strong> and <strong>Vite</strong>, and I run the
+            backend locally with <strong>Docker</strong>. I learned <strong>prompt engineering</strong>,
+            <strong>caching strategies</strong> and <strong>NoSQL data modeling</strong>.
           </p>
         </article>
 
         <article>
+          <!--Add another project here and remove this-->
           <header>
             <h2><a href="#">ColorStackSFU (Community Platform)</a></h2>
           </header>
-          <a href="#" class="image fit"><img src="images/ColorStack SFU.png" alt="ColorStackSFU screenshot" /></a>
+          <a href="https://github.com/WilliamMakori/Daima-motorcycle-Payment-Tracking-system" class="image fit"><img
+              src="images/Daima.jpg" alt="Payment Tracking system" /></a>
           <p>
-            ColorStackSFU is a community web platform built for <strong>Black and Latinx Computing Science
-              students</strong> at SFU.
-            Developed with <strong>HTML, CSS, JavaScript, and Firebase</strong>, it features user authentication, event
-            management,
-            and real-time updates. This project improved my skills in <strong>responsive web design</strong>,
-            <strong>Firebase integration</strong>, and <strong>UI architecture</strong>.
+            A real-time payment tracking and bank reconciliation platform for <strong>Daima Motorcycles Ltd</strong>
+            in Tanzania, which sells motorcycles on credit. Each credit contract gets a unique customer ID and a
+            <strong>CRDB control number</strong>. When a rider deposits money through SimBanking, Wakala agents, M-Pesa
+            or internet banking, a <strong>webhook endpoint</strong> receives the payment, matches it to the right
+            contract by control number, updates the balance and due date, and flags the account as paid off or overdue.
+            Payments with a missing or wrong control number land in an <strong>exception queue</strong> where staff can
+            match them manually in one click, and a built-in webhook simulator lets me test the whole flow without the
+            live bank. Riders get a mobile portal with their balance, payment guides in Swahili and downloadable
+            e-receipts, and the <strong>Google Gemini API</strong> generates loan portfolio risk audits and Swahili
+            payment reminders. Built with <strong>React</strong>, <strong>TypeScript</strong>,
+            <strong>Tailwind CSS</strong> and <strong>Node.js/Express</strong>, bundled with <strong>Vite</strong>.
+            I learned <strong>webhook-driven integrations</strong>, <strong>payment reconciliation logic</strong> and
+            <strong>server-side AI integration</strong>.
           </p>
         </article>
       </section>
